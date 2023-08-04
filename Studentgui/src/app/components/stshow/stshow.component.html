@@ -1,0 +1,36 @@
+
+
+<div class="container">
+  
+<p>Hi {{bb}}</p>
+<mat-card class="yashi">
+    <h1> Result</h1>
+        <mat-card class="hemant">
+          <tr>
+               <td>Roll Number  </td>:
+               <td>{{reso.rollno}}</td>
+            </tr>
+            <tr>
+                <td>Name </td>:
+                <td>{{reso.name}}</td>
+           
+            </tr>
+            <tr>
+                <td>Date of Birth</td>:
+                <td>{{reso.date}}</td>
+            </tr>
+            <tr>
+                <td>Score</td>:
+                <td>{{reso.score}}</td>
+            </tr>
+
+        </mat-card>
+
+</mat-card>
+
+</div>
+<button mat-raised-button (click)="getdata()">logout</button>
+
+{{rr}}
+
+<!--{{reso|json}}-->

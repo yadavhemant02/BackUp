@@ -1,0 +1,33 @@
+<div class="container">
+    <app-logout></app-logout>
+      
+      <mat-card class="hemant">
+          <mat-card class="yashi">
+          <h1> login As Teacher</h1>
+      </mat-card>
+          <form (ngSubmit)="Userdata()">
+           
+          <mat-form-field appearance="outline">
+              <mat-label>Name</mat-label>
+              <input name="rollno"  matInput [(ngModel)]="data.name" placeholder="enter your name">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              
+            </mat-form-field>
+  
+            <mat-form-field appearance="outline">
+              <mat-label>password</mat-label>
+              <input name="name"  matInput [(ngModel)]="data.password" placeholder="enter your password">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              
+            </mat-form-field>
+            <div class="var">
+            <button mat-raised-button color="accent" > Search</button>
+            <button mat-raised-button color="accent">clear</button>
+            </div>
+           </form> 
+  
+      </mat-card>
+  
+     
+  
+  </div>

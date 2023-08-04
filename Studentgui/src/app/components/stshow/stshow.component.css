@@ -1,0 +1,43 @@
+.yashi{
+    width: 50%;
+    margin: auto;
+    background-color: antiquewhite;
+}
+
+.container{
+    margin-top: 100px;
+}
+
+tr{
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+h1{
+    text-align: center;
+   
+}
+td{
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.hemant{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    background-color: bisque;
+}
+button{
+    position: absolute;
+    right: 30px;
+    top:10px;
+    color: blueviolet;
+
+}
+p{
+    position: absolute;
+    right: 120px;
+    top:20px;
+    font-size: 20px;
+}

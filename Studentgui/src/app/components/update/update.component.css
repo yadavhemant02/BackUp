@@ -1,0 +1,17 @@
+mat-card{
+    width: 60%;
+    margin: auto;
+}
+mat-form-field{
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+.hemant{
+    text-align: center;
+    margin: auto;
+}
+button{
+    margin-left: 10px;
+}

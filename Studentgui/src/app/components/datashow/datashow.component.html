@@ -1,0 +1,45 @@
+
+<div class="container">
+<button class="hemant" mat-raised-button color="primary" routerLink="/recored">Add records</button>
+
+</div>
+<!--<ul>
+    <li>hemant</li>
+    <li>hdcsh</li>
+</ul>
+<ul>
+    <li *ngFor="let va of showin">
+   
+        {{va.name}}
+    </li>
+</ul>-->
+<mat-card>total {{showin.length}} Student</mat-card>
+<table border="1">
+    <tr class="yashi">
+        <td>serial No.</td>
+        <td>Roll No.</td>
+        <td>Name</td>
+        <td>Date of Birth</td>
+        <td>Score</td>
+        <td>Action
+
+        </td>
+    </tr>
+    <tr *ngFor="let va of showin">
+        <td>{{va.id}}</td>
+        <td>{{va.rollno}}</td>
+        <td>{{va.name}}</td>
+        <td>{{va.date}}</td>
+        <td>{{va.score}}</td>
+        <td><button mat-mini-fab color="accent" aria-label="Example icon button with a delete icon"
+            (click)="deleted(va.id);">
+            <mat-icon>delete</mat-icon>
+            </button>
+           
+            <button mat-mini-fab color="primary" routerLink="/update/{{va.id}}"><span class="material-icons" >edit</span></button>
+        </td>
+    </tr>
+</table>
+
+<p> Hi {{getdata()}}</p>
+<button mat-raised-button class="yarr" (click)="removedata()"> logout</button>

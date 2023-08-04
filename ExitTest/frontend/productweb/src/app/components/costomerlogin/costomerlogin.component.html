@@ -1,0 +1,32 @@
+
+<div class="hemant">
+<div class="container">
+<mat-card>
+
+  <form [formGroup]="login" (ngSubmit)="dosubmit()">
+    <h1>Login Form</h1>
+<mat-form-field appearance="fill">
+  <mat-label>Email</mat-label>
+  <input matInput placeholder="Placeholder" formControlName="name" [(ngModel)]="data.email">
+  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+  <mat-hint *ngIf="this.login.controls.name.hasError('required')" style="color:red;">please Fill all fields</mat-hint>
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+  <mat-label>Password</mat-label>
+  <input matInput placeholder="Placeholder" formControlName="password" [(ngModel)]="data.password">
+  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+  <mat-hint *ngIf="this.login.controls.password.hasError('required')"style="color:red;" > please fill this feilds</mat-hint>
+  
+</mat-form-field>
+<div class="yashi">
+   <button mat-raised-button color="primary" type="submit"> login</button>
+   <button mat-raised-button color="primary" type="reset"> reset</button>
+</div>
+</form>
+</mat-card>
+
+</div>
+</div>
+
+<button mat-raised-button (click)="back()" class="back"><mat-icon >arrow_back</mat-icon></button>

@@ -1,0 +1,35 @@
+mat-card{
+    width: 60%;
+    margin: auto;
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+.hemant{
+      margin: auto;
+      text-align: center;
+
+}
+
+button{
+    margin-left: 5px;
+}
+
+.logout{
+    display: inline-block;
+    color: white;
+    margin: 5px;
+}
+
+.logoutcss{
+    position: absolute;
+    top:10px;
+    right: 20px;
+}
+
+textarea{
+    height: 140px;
+}
+

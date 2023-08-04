@@ -1,0 +1,32 @@
+
+<h1>Search Product</h1>
+
+
+<form (ngSubmit)="dosubmit()">
+<mat-form-field appearance="fill">
+    <mat-label>productname</mat-label>
+    <input matInput placeholder="Placeholder"  [(ngModel)]="data.productname" name="productname">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+  </mat-form-field>
+
+
+  <mat-form-field appearance="fill">
+    <mat-label>brandname</mat-label>
+    <input matInput placeholder="Placeholder"  [(ngModel)]="data.brandname" name="brandname">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+  </mat-form-field>
+  
+  <mat-form-field appearance="fill">
+    <mat-label>productcode</mat-label>
+    <input matInput placeholder="Placeholder"  [(ngModel)]="data.productcode" name="productcode">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+  </mat-form-field>  
+ <div class="ssd">
+  <button mat-raised-button mat-dialog-close="" type="submit">click</button>
+ </div>
+  </form>
+
+  {{reso.productcode}}

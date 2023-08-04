@@ -1,0 +1,65 @@
+
+
+<div clas="container">
+      
+
+    <mat-card>
+       
+      <h1 class="page"> Add Product Details</h1> 
+
+      <form (ngSubmit)="dosubmit()">
+
+      <mat-form-field appearance="fill">
+        <mat-label>productname</mat-label>
+        <input matInput placeholder="Placeholder" [(ngModel)]="data.productname" name="productname">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>Hint</mat-hint>
+      </mat-form-field>
+      
+
+      <mat-form-field appearance="fill">
+        <mat-label>brandname</mat-label>
+        <input matInput placeholder="Placeholder" [(ngModel)]="data.brandname" name="brandname">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>Hint</mat-hint>
+      </mat-form-field>
+            
+      <mat-form-field appearance="fill">
+        <mat-label>price</mat-label>
+        <input matInput placeholder="Placeholder" [(ngModel)]="data.price" name="price">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>Hint</mat-hint>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>productcode</mat-label>
+        <input matInput placeholder="Placeholder" [(ngModel)]="data.productcode" name="productcode">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>Hint</mat-hint>
+      </mat-form-field>
+   
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Leave a comment</mat-label>
+        <textarea matInput placeholder="Ex. It makes me feel..." [(ngModel)]="data.description" name="description"></textarea>
+      </mat-form-field>
+
+      
+     
+        
+       
+     
+      <div class="hemant">
+        <button mat-raised-button type="submit" > add </button>
+        <button mat-raised-button type="reset" routerLink="/imageupload"> Hendler</button>
+
+     </div>
+      </form>
+
+    </mat-card>
+    <div class="logoutcss">
+     <h1 class="logout">Hi {{bb}}</h1> 
+     <button mat-raised-button (click)="logout()">logout</button>
+    </div>
+  {{data|json}}
+</div>
+

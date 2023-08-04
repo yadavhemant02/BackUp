@@ -1,0 +1,38 @@
+img{
+    width: 400px;
+    height: 400px;
+    padding: 40px;
+}
+
+
+
+.hemant{
+   border: 1px solid white;
+   position: absolute;
+   width: 600px;
+   height: 600px;
+   right: 140px;
+   top: 110px;
+  
+}
+
+.a{
+    display: inline-block;
+    border: 1px solid red;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+
+    margin: 10px;
+}
+.a:hover{
+    background-color: beige;
+}
+.ba{
+    position: relative;
+    top: 8px;
+}
+.btn{
+   margin: 10px;
+}

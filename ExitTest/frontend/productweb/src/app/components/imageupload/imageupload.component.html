@@ -1,0 +1,26 @@
+
+
+
+   <div class="ssd">
+    <table>
+        <tr> 
+             
+            <td>Productname</td>
+            <td>Brandname</td>
+            <td>productcode</td>
+
+
+        </tr>
+        <tr *ngFor="let uu of reso">
+            <td>{{uu.productname}}</td>
+            <td>{{uu.brandname}}</td>
+            <td>{{uu.productcode}}</td>
+            <td> <button routerLink="/addimage/{{uu.id}}">addimage</button></td>
+            <td> <button mat-raised-button (click)="delete(uu.id)">delete</button></td>
+        </tr>
+   
+    </table>     
+</div>
+
+
+<h1>hemant</h1>

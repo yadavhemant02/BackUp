@@ -1,0 +1,48 @@
+
+<mat-toolbar>
+
+
+</mat-toolbar>
+<div class="container">
+
+
+  <h1 class="page">Home/</h1>
+  <div class="name">
+    <mat-icon >add_shopping_cart</mat-icon>
+    <h1 class="nameinlin"> Product Web </h1>
+  </div>
+
+  <div class="yasu">
+
+    
+  <mat-card class="hemant" *ngFor="let va of reso">
+
+       <mat-card class="yashi">
+       <!--<img src="./../../../assets/image/signup.jpg">-->
+        <img src="http://localhost:8899/image/{{va.image}}">
+       </mat-card>
+
+       <h1> {{va.brandname}}</h1>
+        
+       <p> {{va.productname}}</p>
+       <span>{{va.price| currency:'INR':true}}</span>
+  <div class="view">
+
+       <button mat-raised-button class="viewbutton" routerLink="/singleproduct/{{va.id}}">View</button>
+</div>
+  </mat-card>
+
+  </div>
+
+
+</div>
+
+<div class="logoutcss">
+  <h1 class="logout"> Hi {{bb}} &nbsp;</h1>
+
+  <button mat-raised-button (click)="logout()">logout</button>
+
+</div>  
+
+<button mat-raised-button class="dialog" (click)="ddl()"> Search</button>
+

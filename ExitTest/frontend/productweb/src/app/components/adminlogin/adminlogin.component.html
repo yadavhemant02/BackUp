@@ -1,0 +1,35 @@
+<div class="hemant">
+    <div class="container">
+    <mat-card>
+    
+      <form  (ngSubmit)="dosubmit()">
+        <h1>Admin Login Form</h1>
+    <mat-form-field appearance="fill">
+      <mat-label>Admin username</mat-label>
+      <input matInput placeholder="Placeholder"  [(ngModel)]="data.name" name="name">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill">
+      <mat-label>Admin password</mat-label>
+      <input matInput placeholder="Placeholder" [(ngModel)]="data.password" name="password">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+      
+    </mat-form-field>
+    <div class="yashi">
+       <button mat-raised-button color="primary" type="submit"> login</button>
+       <button mat-raised-button color="primary" type="reset"> reset</button>
+    </div>
+    </form>
+    </mat-card>
+    
+    </div>
+    </div>
+
+    <button mat-raised-button (click)="back()" class="back"><mat-icon>arrow_back</mat-icon></button>
+     
+    <div *ngFor="let uu of reso">
+           {{uu.name}}
+        </div>

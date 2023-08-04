@@ -1,0 +1,43 @@
+
+<head>
+
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<div class="container">
+
+    
+
+           <img src="http://localhost:8899/image/{{reso.image}}">
+           
+
+   
+
+    <div class="hemant">
+        <h1>{{reso.brandname}}</h1>
+        
+        <p>{{reso.productname}}</p>
+
+        <div class="size">
+            <h1><b>SELECT SIZE</b></h1>
+            <div class="a"><b class="ba">38</b></div>
+            <div class="a"><b class="ba">39</b></div>
+            <div class="a"><b class="ba">40</b></div>
+            <div class="a"><b class="ba">42</b></div>
+            <div class="a"><b class="ba">44</b></div>
+
+        </div>
+
+        <button mat-raised-button color="accent">ADD TO BAG</button>
+        <button mat-raised-button class="btn">WISHLIST</button>
+       <h1> Item Price  &nbsp;<span style="font-weight:bold;">{{reso.price | currency:'INR'}}</span></h1>
+       <h1>{{reso.description}}</h1>
+
+       
+       </div>
+
+
+</div>

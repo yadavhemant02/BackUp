@@ -1,0 +1,64 @@
+
+
+
+<div class="hemant">
+    <img src="./../../../assets/image/signup.jpg">
+</div>
+
+<div class="yashi">
+
+<h1>Registration</h1>
+
+<p> register with your email and password  </p>
+
+<form [formGroup]="login" (ngSubmit)="dosubmit()">
+<mat-form-field appearance="fill" class="ff">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="enter you email" formControlName="email" [(ngModel)]="data.email" name="email">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint *ngIf="this.login.controls.email.hasError('required')"style="color:red;" > please fill this feilds</mat-hint>
+    
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="mm">
+    <mat-label>Firstname</mat-label>
+    <input matInput placeholder="enter your firstname" formControlName="firstname" [(ngModel)]="data.firstname" name="firstname">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint *ngIf="this.login.controls.firstname.hasError('required')"style="color:red;" > please fill this feilds</mat-hint>
+    
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="mm">
+    <mat-label>Lastname</mat-label>
+    <input matInput placeholder="enter your lastname" formControlName="lastname" [(ngModel)]="data.lastname" name="lastname">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint *ngIf="this.login.controls.lastname.hasError('required')"style="color:red;" > please fill this feilds</mat-hint>
+    
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="mm">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="enter your password" type="password" formControlName="password" [(ngModel)]="data.password" name="password">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint *ngIf="this.login.controls.password.hasError('required')"style="color:red;" > please fill this feilds</mat-hint>
+    
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" class="mm">
+    <mat-label>Confirm Password</mat-label>
+    <input matInput placeholder="enter your cofirm password" formControlName="confirmpassword" [(ngModel)]="data.confirmpassword" name="confirmpassword">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint *ngIf="this.login.controls.confirmpassword.hasError('required')"style="color:red;" > please fill this feilds</mat-hint>
+    
+  </mat-form-field>
+
+  <div class="love">
+     <button mat-raised-button type="submit">signup</button>
+     <button mat-raised-button > clear</button>
+     </div>
+ </form>
+ </div>
+
+ {{reo}}
+
+    

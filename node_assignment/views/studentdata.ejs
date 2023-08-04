@@ -1,0 +1,42 @@
+<script>
+  if(sess!=undefined){
+    window.location.assign('/')
+  }
+  document.write('<%=sess.id%>')
+</script>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <div class="fluid">
+            <div class="row" style="height: 60px; text-align: center; background-color: rgb(187, 247, 213);">
+              <span style="text-align: center;margin: auto; font-size: 30px;">ResultManegementSystem</span>
+            </div>
+          </div>
+    
+    <h1 style="text-align: center; margin-right: 120vmin; margin-top:2vmin ;">Result</h1>
+    <table style="font-size: 20px; margin: auto;">
+        <% mascots.forEach(function(mascot) { %>
+          <tr>
+            <strong><td>Name</td><td><%= mascot.name %></td></strong></tr>
+            <tr>
+                <td>Roll.No</td><td> <%= mascot.rollno %></td>
+            <tr>
+            <tr>
+             <td>Score</td> <td><%= mascot.score %></td>
+            </tr> 
+            <tr>
+                <td>date Of Birth</td><td>
+                    <%= mascot.Dateofbirth%>
+                </td>
+            </tr>
+          
+        <% }); %>
+        </table>
+      <a href="/logout"><button class="btn btn-primary" style="font-size: 15px;">logout</button></a> 
+      
+      
+    </body>
+</html>

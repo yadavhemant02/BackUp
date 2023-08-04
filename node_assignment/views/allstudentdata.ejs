@@ -1,0 +1,94 @@
+<script>
+  var bb = '<%=name%>';
+  
+  if(!bb){
+     location.replace('teacherlogin')
+  }
+  
+
+</script>
+
+<html>
+    <head>
+           <!-- Latest compiled and minified CSS -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+         <!-- jQuery library -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+ 
+         <!-- Latest compiled JavaScript -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+         
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   
+    </head>
+    <body>
+        <div class="fluid">
+            <div class="row" style="height: 60px; background-color: rgb(187, 247, 213);">
+              <span style="text-align: center; font-size: 30px;">ResultManegementSystem</span>
+            </div>
+          </div>
+
+        <div style="margin-left:150vmin; margin-top:2vmin;">
+          <button style="font-size: 20px;"class="btn btn-primary" type="button" onclick="student()">Add Students</button>
+          
+        </div>  
+        <div style="margin-top: 2vmin;margin-left: 12vmin; margin-bottom: 2vmin;">
+          <h1 style="color: blue;">Total Student <%=len%>
+         
+          </h1>
+       
+        <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Roll.No</th>
+                <th scope="col">DateOfBirth</th>
+                <th scope="col">Score</th>
+                <th scope="col">Action</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr><script> var sno = 1;</script>
+                <% mascots.forEach(function(mascot) { %>
+                <th scope="row">
+                  <script>
+                    
+                    document.write(sno)
+                    sno++; 
+                  </script>
+                </th>
+                <td><%= mascot.name %></td>
+                <td><%= mascot.rollno %></td>
+                
+                <script>
+                  var str = '<%= mascot.Dateofbirth %>'
+                  var str2 = str.slice(0,15)
+                  document.write("<td>"+str2+"</td>")
+                </script>
+                <td><%= mascot.score %></td>
+                <td><a href="/bb/<%=mascot.id%>/docs" style="color:brown">delete</a>
+                    <a href="/bb/<%=mascot.id%>/edit">edit</a></td>
+              </tr>
+              
+              
+              
+              <% }); %>
+            </tbody>
+            </table>
+        </div>  
+       <h1 style="margin-top: 5vmin; margin-left: 5vmin;"> <%=name%>
+        <a href="/logout"><button style="font-size: 15px;" class="btn btn-primary">logout</button></a></h1>
+        <script>
+          function student(){
+            window.location.assign('addstudent');
+          }
+
+           
+        </script>
+    </body>
+</html>

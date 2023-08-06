@@ -1,0 +1,18 @@
+<p>logiin works!</p>
+
+<form [formGroup]="loginform" (ngSubmit)="ddl()">
+    <input type="text" name="name" formControlName="name">
+    <span *ngIf="name && name.invalid && name.touched">this is invalid</span>
+    <input type="text" name="password" formControlName="password">
+    <button [disabled]="loginform.invalid" type="submit">click</button>
+</form>
+
+<input type="text" #box (keyup)="keydata(box.value)" >
+
+{{ 0.245 | percent }}
+
+{{ 1.1334354654 | number }}
+
+{{ 23-2-2000 | date: 'long'}}
+
+{{ 4.4324 | currency:'USD' }}

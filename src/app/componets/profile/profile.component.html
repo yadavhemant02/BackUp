@@ -1,0 +1,18 @@
+<p>profile works!</p>
+
+{{havedata | json}}
+
+<h1>Basic Form</h1>
+
+<form #data="ngForm" (ngSubmit)="getdata(data.value)">
+    <input type="text" ngModel placeholder="enter your name" name="name">
+    <input type="text" ngModel placeholder="enter your email" name="email">
+    <button>click</button>
+</form>
+
+<input type="text" ngModel #dd placeholder="enter">
+
+<button (click)="ddl(dd.value)">send</button>
+
+
+<button (click)="removetoken()">removetoken</button>

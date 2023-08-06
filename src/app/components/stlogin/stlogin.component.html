@@ -1,0 +1,38 @@
+<div class="container">
+  <app-logout></app-logout>
+    
+    <mat-card class="hemant">
+        <mat-card class="yashi">
+        <h1> Find Result</h1>
+    </mat-card>
+        <form (ngSubmit)="Userdata()">
+         
+        <mat-form-field appearance="outline">
+            <mat-label>Roll No</mat-label>
+            <input name="rollno"  matInput [(ngModel)]="data.rollno" placeholder="enter your roll no">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input name="name"  matInput [(ngModel)]="data.name" placeholder="enter your name">
+            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            
+          </mat-form-field>
+
+          
+
+          <div class="var">
+          <button mat-raised-button color="accent" type="submit"> Search</button>
+          <button mat-raised-button color="accent" type="reset">clear</button>
+          </div>
+         </form> 
+
+    </mat-card>
+
+    {{ff|json}}
+    {{ff.id}}
+
+
+</div>

@@ -1,0 +1,35 @@
+.hemant{
+    width: 60%;
+    margin: auto;
+    background-color: antiquewhite;
+    margin-top: 10px;
+
+}
+mat-form-field{
+    width: 100%;
+}
+.container{
+    margin-top: 80px;
+}
+h1{
+    text-align: center;
+}
+mat-card{
+    width: 60%;
+    margin: auto;
+    
+   
+}
+.yashi{
+    background-color: beige;
+    
+   
+
+}
+.var{
+    text-align: center;
+    margin: auto;
+}
+button{
+    margin-left: 5px;
+}

@@ -1,0 +1,43 @@
+<div class="container">
+   <app-logout></app-logout>
+   <button mat-raised-button color="accent" routerLink="/data">Back </button>
+    <mat-card>
+        <h1>Add New Result</h1>
+   <form (ngSubmit)="addUser()">     
+    
+    <mat-form-field appearance="outline">
+        <mat-label>Roll No</mat-label>
+        <input name="rollno"  matInput [(ngModel)]="data.rollno" placeholder="enter your roll no">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input name="name" [(ngModel)]="data.name" matInput placeholder="enter your name">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>date of Birth</mat-label>
+        <input type="Date" max="{{re}}" name="date" [(ngModel)]="data.date" matInput >
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Score</mat-label>
+        <input name="score" [(ngModel)]="data.score" matInput placeholder="enter your score">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        
+      </mat-form-field>
+      <div class="hemant">
+      <button mat-raised-button color="accent" type="submit">recored </button>
+      <button mat-raised-button color="accent" type="reset">reset </button>
+      </div>
+</form>
+      </mat-card>
+ </div>
+      {{data | json}}
+      
+
+
+

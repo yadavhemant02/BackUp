@@ -1,0 +1,12 @@
+span{
+    text-align: center;
+    
+}
+mat-toolbar{
+    background-color: lightgreen;
+}
+
+.container{
+    text-align: center;
+    margin:auto;
+}
